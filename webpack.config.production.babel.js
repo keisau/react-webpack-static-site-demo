@@ -39,7 +39,6 @@ export default {
 				'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'dev'),
 			}
 		}),
-		new webpack.optimize.DedupePlugin(),
 		new webpack.ProvidePlugin({
         _: "lodash"
     })
